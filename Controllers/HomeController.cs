@@ -41,11 +41,11 @@ namespace FIT5120_Quality_Education_in_Australia_Iteration_01.Controllers
         [HttpPost]
         public ActionResult PasswordProtection([Bind(Include = "password")] WebsiteProtectionVM websiteProtectionVm)
         {
-            if (websiteProtectionVm.password == "123456")
+            if (websiteProtectionVm.password == "Iteration01")
             {
                 return RedirectToAction("Index", "Home");
             }
-            else if (websiteProtectionVm.password != "123456")
+            else if (websiteProtectionVm.password != "Iteration01")
             {
                 ViewBag.ErrMsg = "Password incorrect, please check and enter again!";
                 return View(websiteProtectionVm);
