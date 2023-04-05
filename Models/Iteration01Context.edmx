@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Iteration01DbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="EnglishSupport">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="InstitutionName" Type="nvarchar(max)" />
+          <Property Name="Address" Type="nvarchar(max)" />
+          <Property Name="Suburb" Type="nvarchar(max)" />
+          <Property Name="DetailInformation" Type="nvarchar(max)" />
+          <Property Name="Image" Type="nvarchar(max)" />
+          <Property Name="OfficialWebsite" Type="nvarchar(max)" />
+          <Property Name="Telephone" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="TraditionalFestivals">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="ShortInfo" Type="nvarchar(max)" />
+          <Property Name="DetailInformation" Type="nvarchar(max)" />
+          <Property Name="Image01" Type="nvarchar(max)" />
+          <Property Name="Image02" Type="nvarchar(max)" />
+          <Property Name="Date" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityContainer Name="Iteration01DbModelStoreContainer">
+          <EntitySet Name="EnglishSupport" EntityType="Self.EnglishSupport" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TraditionalFestivals" EntityType="Self.TraditionalFestivals" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Iteration01DbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="EnglishSupport">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="InstitutionName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Suburb" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DetailInformation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OfficialWebsite" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telephone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TraditionalFestival">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ShortInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DetailInformation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Image01" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Image02" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="Iteration01DbEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="EnglishSupports" EntityType="Self.EnglishSupport" />
+          <EntitySet Name="TraditionalFestivals" EntityType="Self.TraditionalFestival" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Iteration01DbModelStoreContainer" CdmEntityContainer="Iteration01DbEntities1">
+          <EntitySetMapping Name="EnglishSupports">
+            <EntityTypeMapping TypeName="Iteration01DbModel.EnglishSupport">
+              <MappingFragment StoreEntitySet="EnglishSupport">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="InstitutionName" ColumnName="InstitutionName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Suburb" ColumnName="Suburb" />
+                <ScalarProperty Name="DetailInformation" ColumnName="DetailInformation" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="OfficialWebsite" ColumnName="OfficialWebsite" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TraditionalFestivals">
+            <EntityTypeMapping TypeName="Iteration01DbModel.TraditionalFestival">
+              <MappingFragment StoreEntitySet="TraditionalFestivals">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ShortInfo" ColumnName="ShortInfo" />
+                <ScalarProperty Name="DetailInformation" ColumnName="DetailInformation" />
+                <ScalarProperty Name="Image01" ColumnName="Image01" />
+                <ScalarProperty Name="Image02" ColumnName="Image02" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
