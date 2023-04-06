@@ -12,7 +12,7 @@ namespace FIT5120_Quality_Education_in_Australia_Iteration_01.Controllers
 {
     public class TraditionalFestivalsController : Controller
     {
-        private Iteration01DbEntities1 db = new Iteration01DbEntities1();
+        private FIT5120_Quality_Education_in_Australia_Iteration_01_dbEntities db = new FIT5120_Quality_Education_in_Australia_Iteration_01_dbEntities();
 
         public ActionResult Intro()
         {

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAWega6tydK0mnVReOsWKMTAAAAAACAAAAAAAQZgAAAAEAACAAAAC/gN1I7BGdP1OuUYSRAGvRsj1vdu+QsYlr9R3HsBI80gAAAAAOgAAAAAIAACAAAACKTrvilQUe0QHeklwz547xPePK4r7FEpCy+RUgDg/xfoAAAACgZS7cFQTrBa8G4VkKDW+6M0SY48fkEkyBFNO2Oy3VD82u9QX8HfZwcTlR6UyQD63Q3V9+k9sDsg5Jn16xWaeTz34ma83Ow3fGgsGBu0PwPXwrg+3oSGZ4HvQPWBU/Pe9ch/xbT0XhWrItQezF/fM0+GzcAGgz/R3disozbursZkAAAADUUjAFTcAFy4oLNgYZYKZepUzwGS9uzdrOqj2pFXA0/OHPBI4TPdEdpt5pi219o5hkyPLgeWPLaFLeKCYCPwT+</EncryptedPassword>
+    <History>True|2023-04-06T23:50:30.6255857Z;True|2023-04-07T09:41:36.1061288+10:00;True|2023-04-07T09:30:51.5345821+10:00;True|2023-04-07T09:28:21.7426418+10:00;True|2023-04-07T09:23:26.1525394+10:00;True|2023-04-07T08:42:07.0638574+10:00;True|2023-04-07T08:32:19.0219853+10:00;True|2023-04-07T08:30:00.3529253+10:00;True|2023-04-07T08:24:27.7670543+10:00;True|2023-04-07T08:18:21.2840029+10:00;True|2023-04-07T08:13:24.2252298+10:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

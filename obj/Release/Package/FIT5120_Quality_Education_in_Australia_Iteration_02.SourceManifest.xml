@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\Pai_R\Desktop\FIT5120_Quality_Education_in_Australia_Iteration_02_V01\obj\Release\Package\PackageTmp" />
+  <setAcl path="C:\Users\Pai_R\Desktop\FIT5120_Quality_Education_in_Australia_Iteration_02_V01\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\Pai_R\Desktop\FIT5120_Quality_Education_in_Australia_Iteration_02_V01\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

@@ -1,0 +1,153 @@
+.rotate-180-anim {
+  -webkit-animation: rotate180 4s linear infinite;
+          animation: rotate180 4s linear infinite;
+}
+
+@-webkit-keyframes rotate180 {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  65% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate180 {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  65% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.rotate-45-anim {
+  transform: rotate(-45deg);
+  -webkit-animation: rotate45 4s linear infinite;
+          animation: rotate45 4s linear infinite;
+}
+
+@-webkit-keyframes rotate45 {
+  0% {
+    transform: rotate(-45deg);
+  }
+  15% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  65% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes rotate45 {
+  0% {
+    transform: rotate(-45deg);
+  }
+  15% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  65% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+.bg-anim {
+  -webkit-animation: changebg 2s steps(2, jump-none) infinite;
+          animation: changebg 2s steps(2, jump-none) infinite;
+}
+
+@-webkit-keyframes changebg {
+  from {
+    background-color: #000;
+  }
+  to {
+    background-color: currentcolor;
+  }
+}
+
+@keyframes changebg {
+  from {
+    background-color: #000;
+  }
+  to {
+    background-color: currentcolor;
+  }
+}
+.white-text-anim {
+  -webkit-animation: changewh 2s steps(2, jump-none) infinite;
+          animation: changewh 2s steps(2, jump-none) infinite;
+}
+
+@-webkit-keyframes changewh {
+  from {
+    color: currentcolor;
+  }
+  to {
+    color: #fff;
+  }
+}
+
+@keyframes changewh {
+  from {
+    color: currentcolor;
+  }
+  to {
+    color: #fff;
+  }
+}
+.delay-1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.delay-2 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.delay-3 {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.anim-reverse {
+  animation-direction: reverse;
+}
+
+.duration-5 {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.duration-1 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}

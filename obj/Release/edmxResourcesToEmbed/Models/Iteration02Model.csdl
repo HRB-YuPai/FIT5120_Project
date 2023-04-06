@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FIT5120_Quality_Education_in_Australia_Iteration_01_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EnglishSupport">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="InstitutionName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Suburb" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DetailInformation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OfficialWebsite" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Telephone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TraditionalFestival">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ShortInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DetailInformation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Image01" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Image02" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="FIT5120_Quality_Education_in_Australia_Iteration_01_dbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EnglishSupports" EntityType="Self.EnglishSupport" />
+    <EntitySet Name="TraditionalFestivals" EntityType="Self.TraditionalFestival" />
+  </EntityContainer>
+</Schema>

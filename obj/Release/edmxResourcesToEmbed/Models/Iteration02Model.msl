@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FIT5120_Quality_Education_in_Australia_Iteration_01_dbModelStoreContainer" CdmEntityContainer="FIT5120_Quality_Education_in_Australia_Iteration_01_dbEntities">
+    <EntitySetMapping Name="EnglishSupports">
+      <EntityTypeMapping TypeName="FIT5120_Quality_Education_in_Australia_Iteration_01_dbModel.EnglishSupport">
+        <MappingFragment StoreEntitySet="EnglishSupport">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="InstitutionName" ColumnName="InstitutionName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Suburb" ColumnName="Suburb" />
+          <ScalarProperty Name="DetailInformation" ColumnName="DetailInformation" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="OfficialWebsite" ColumnName="OfficialWebsite" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TraditionalFestivals">
+      <EntityTypeMapping TypeName="FIT5120_Quality_Education_in_Australia_Iteration_01_dbModel.TraditionalFestival">
+        <MappingFragment StoreEntitySet="TraditionalFestivals">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortInfo" ColumnName="ShortInfo" />
+          <ScalarProperty Name="DetailInformation" ColumnName="DetailInformation" />
+          <ScalarProperty Name="Image01" ColumnName="Image01" />
+          <ScalarProperty Name="Image02" ColumnName="Image02" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

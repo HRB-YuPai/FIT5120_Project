@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="FIT5120_Quality_Education_in_Australia_Iteration_01_dbEntities-Web.config Connection String" description="FIT5120_Quality_Education_in_Australia_Iteration_01_dbEntities 由应用程序在 web.config 中用来访问数据库的连接字符串。" defaultValue="metadata=res://*/Models.Iteration02Model.csdl|res://*/Models.Iteration02Model.ssdl|res://*/Models.Iteration02Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=fit5120-quality-education-in-australia-iteration-01dbserver.database.windows.net;initial catalog=FIT5120_Quality_Education_in_Australia_Iteration_01_db;persist security info=True;user id=pai;password=Yp9804081234;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Pai_R\\Desktop\\FIT5120_Quality_Education_in_Australia_Iteration_02_V01\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='FIT5120_Quality_Education_in_Australia_Iteration_01_dbEntities']/@connectionString" />
+  </parameter>
+</parameters>
